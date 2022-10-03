@@ -1,13 +1,17 @@
-const Util = {}
+const Util = {
+	options: {
+		backButton: true,
+	},
+};
 
-const UtilInit = () => {
-    Util.backButton = () => {
-        const html = `
-        <a href="/" class="back-button"><div><i class="material-icons">arrow_back</i></div></a>
-        `
+// Functions
+(() => {
 
-        document.body.innerHTML += html
-    }
-}
+	Util.init = () => {
+		if (Util.options.backButton) {
+			const html = "<a href=\"/\" class=\"back-button\"><div><i class=\"material-icons\">home</i></div></a>";
+			document.body.innerHTML += html;
+		}
+	};
 
-UtilInit()
+})();

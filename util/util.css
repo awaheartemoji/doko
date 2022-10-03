@@ -1,7 +1,7 @@
 :root {
-   --font-color: #d0d0d0;
-   --bg-color: #201f22;
-   --hi-color: #a680ff;
+    --font-color: #d0d0d0;
+    --bg-color: #201f22;
+    --hi-color: #baa1ff;
 }
 
 
@@ -9,11 +9,14 @@
 /* Custom Highlight Color */
 ::selection {
     color: #242324;
-    background: #ffb7b7; /* WebKit/Blink Browsers */
+    background: #ffb7b7;
+    /* WebKit/Blink Browsers */
 }
+
 ::-moz-selection {
     color: #242324;
-    background: #ffb7b7; /* Gecko Browsers */
+    background: #ffb7b7;
+    /* Gecko Browsers */
 }
 
 
@@ -36,7 +39,7 @@
 }
 
 .back-button:hover {
-    color: var(--hi-color); 
+    color: var(--hi-color);
 }
 
 .back-button i {
@@ -50,7 +53,34 @@
     content: attr(data-placeholder);
 }
 
-.util-placeholder:empty::before, ::placeholder {
+.util-placeholder:empty::before,
+::placeholder {
     font-size: 1em;
     color: #7f7f7f;
+}
+
+
+
+
+/* Custom Input Box */
+.util-inputbox {
+    border-radius: 4px;
+    padding: 3px;
+    border: 2px solid #878787;
+    background-color: #ffffff;
+    /* -moz-appearance: textfield; */
+}
+
+/* .util-inputbox::-webkit-outer-spin-button,
+.util-inputbox::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} */
+
+.util-inputbox:focus {
+    outline: none;
+}
+
+.util-inputbox:hover {
+    border: 2px solid #4d4d4d;
 }

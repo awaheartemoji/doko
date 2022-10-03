@@ -1,22 +1,17 @@
 [
-    {
-        "id": "template",
-        "title": "temp",
-        "desc": "temp"
-    },
-    {
-        "id": "bit-calc",
-        "title": "Bit Counter",
-        "desc": "A little toolo the things that it does idk just do it"
-    },
-    {
-        "id": "color-highlight",
-        "title": "Color Highlighter",
-        "desc": "Put in the colors and it will color them"
-    },
-    {
-        "id": "ult-bounce",
-        "title": "Color Hrrighlighter",
-        "desc": "Put in the colors and it will color them"
-    }
+  {
+    "id": "template",
+    "title": "temp",
+    "desc": "temp"
+  },
+  {
+    "id": "bit-calc",
+    "title": "Bit Counter",
+    "desc": "A little toolo the things that it does idk just do it"
+  },
+  {
+    "id": "color-highlight",
+    "title": "Color Highlighter",
+    "desc": "Put in the colors and it will color them"
+  }
 ]

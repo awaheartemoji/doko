@@ -68,23 +68,6 @@ p {
 
 
 
-/* Ideas */
-.ideas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.ideas * {
-    background-color: #2f2b35;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-
-
 
 
 
