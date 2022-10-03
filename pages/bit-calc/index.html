@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 
@@ -29,7 +30,9 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
 
     <!-- Icons -->
@@ -37,23 +40,30 @@
 
 
 </head>
+
 <body onload="init();">
 
     <br><br>
 
     <p id="result">0</p>
+
     <div id="settings">
-        <input type="number" id="e" onKeyDown="return false;">
-        <label for="e"></label>
 
-        <input type="number" id="e" onKeyDown="return false;">
-        <label for="e"></label>
+        <div>
+            <label>Signed?</label>
+            <input type="checkbox" id="signed" checked="checked">
+        </div>
+
+        <div>
+            <label>Bits:</label>
+            <input type="number" id="bits" class="util-inputbox" value="8">
+        </div>
+
     </div>
-
-    <br><br>
 
     <div id="bitlist"></div>
 
 
 </body>
+
 </html>
