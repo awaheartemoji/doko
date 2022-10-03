@@ -2,7 +2,7 @@ function init() {
 	Util.init();
 
 	const list = document.getElementById("bitlist");
-	let bitAmount = Math.round(8 / 8) * 8;
+	let bitAmount = 8;
 	let signed = true;
 
 
@@ -19,8 +19,9 @@ function init() {
 
 	// Update on bitAmount change
 	document.getElementById("bits").addEventListener("input", (e) => {
-		bitAmount = Math.round(e.target.value / 8) * 8;
+		bitAmount = e.target.value;
 		generateBits(bitAmount);
+
 	});
 }
 
@@ -46,19 +47,14 @@ function update(signed, bitAmount) {
 function generateBits(bitAmount) {
 	const list = document.getElementById("bitlist");
 	list.innerHTML = "";
-	for (let rowID = 0; rowID < bitAmount / 8; rowID++) {
-		const row = [];
-		for (let i = 0; i < 8; i++) {
-			const id = (rowID * 8) + i;
-			const databit = Math.pow(2, id);
-
-			row.push(`<div>
-            <input class="bitinput" type="checkbox" id="bit${id}" data-bit="${databit}">
-            <label class="bitlabel" for="bit${id}">${id + 1}</label>
+	for (let i = 0; i < bitAmount; i++) {
+		list.innerHTML += (`<div>
+            <input class="bitinput" type="checkbox" id="bit${i}" data-bit="${Math.pow(2, i)}">
+            <label class="bitlabel" for="bit${i}">${i + 1}</label>
             </div>`);
-		}
-		list.innerHTML += `<div class="bitrow">${row.join("\n")}</div>`;
 	}
+	update();
+
 }
 
 

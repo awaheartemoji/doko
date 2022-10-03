@@ -33,11 +33,7 @@ p {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.bitrow {
-    display: flex;
-    gap: 10px;
+    padding: 10px;
 }
 
 .bitlabel {
@@ -48,7 +44,6 @@ p {
     height: 2em;
     line-height: 2em;
     font-size: 20px;
-    border-radius: 25%;
     padding: 5px;
 
     background-color: rgb(103, 72, 72);
