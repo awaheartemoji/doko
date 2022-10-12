@@ -1,13 +1,8 @@
 [
   {
-    "id": "template",
-    "title": "temp",
-    "desc": "temp"
-  },
-  {
     "id": "bit-calc",
     "title": "Bit Counter",
-    "desc": "A little toolo the things that it does idk just do it"
+    "desc": "Binary Calculator"
   },
   {
     "id": "color-highlight",
