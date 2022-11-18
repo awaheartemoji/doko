@@ -8,5 +8,10 @@
     "id": "color-highlight",
     "title": "Color Highlighter",
     "desc": "Put in the colors and it will color them"
+  },
+  {
+    "id": "clock",
+    "title": "Clock",
+    "desc": "It's a clock"
   }
 ]
