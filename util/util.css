@@ -63,6 +63,26 @@
 
 
 
+/* Custom Checkbox */
+.util-checkbox {
+    position: relative;
+    aspect-ratio: 1 / 1;
+}
+
+.util-checkbox>* {
+    width: 100%;
+    height: 100%;
+}
+
+.util-checkbox>input {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
 
 /* Custom Input Box */
 .util-inputbox {
